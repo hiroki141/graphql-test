@@ -47,5 +47,8 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem "graphiql-rails"
+  gem "rubocop", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
 end
 
