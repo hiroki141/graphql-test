@@ -3,7 +3,7 @@ module Resolvers
     description 'Find books'
     type [Types::BookType], null: false
 
-    def resolve()
+    def resolve
       Book.all
     end
   end
