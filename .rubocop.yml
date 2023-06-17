@@ -1,0 +1,43 @@
+# チェック対象から除外するファイル
+AllCops:
+  Exclude:
+    - 'node_modules/**/*' # rubocop config/default.yml
+    - 'vendor/**/*' # rubocop config/default.yml
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'Gemfile'
+    - 'bin/*'
+    # - 'db/schema.rb'
+
+Layout/LineLength:
+  Max: 160
+
+Layout/IndentationWidth:
+  Enabled: true
+
+Lint/UnusedMethodArgument:
+  Exclude:
+    - 'app/graphql/app_schema.rb'
+
+Lint/UselessMethodDefinition:
+  Exclude:
+    - 'app/graphql/app_schema.rb'
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Naming/MethodParameterName:
+  Exclude:
+    - 'app/controllers/graphql_controller.rb'
