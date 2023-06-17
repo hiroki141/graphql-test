@@ -1,5 +1,3 @@
-inherit_from: .rubocop_todo.yml
-
 # チェック対象から除外するファイル
 AllCops:
   Exclude:
